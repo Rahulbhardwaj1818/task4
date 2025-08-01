@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive Form exercise</title>
+    <style> 
+     #r{
+        height: 200%;
+        width: 70%;
+        border-color: rgb(116, 29, 29);
+        margin: 60px 70px 60px 275px ;
+        padding: 40px  20px 25px 25px;
+        
+     }
+        </style>
+</head>
+<div id="r">
+    <form action="#" method="post" style="background-color: rgb(81, 218, 177);">
+    <header>
+    <h1 style="text-align: center; color: rgb(32, 85, 48);">Travel&T-shirt order Form</h1>
+    <div height="500px" width="600px">
+        <div style="background-color: rgb(112, 214, 192);" height="500px" width="300px">
+    <fieldset>
+    <label for="user">User name</label>
+    <input type="text" placeholder="user name" id="user">
+    <label for="email">Email</label>
+    <input type="email" placeholder="user email" id="email">
+    <label for="travel-select">Choose destination</label>
+    <select name="destination" id="travel-select">
+        <option value=""><b>choose your destination</b></option>
+        <option value="Goa">Goa</option>
+        <option value="Manali">Manali</option>
+        <option value="ladakh">ladakh</option>
+        <option value="kerala">kerala</option>
+        <option value="uttrakhand">uttrakhand</option>
+        <option value="Jaipur">Jaipur</option>
+    </select><br>
+    </div>
+    </fieldset>
+    </header>
+    <br>
+<header>
+    <div>
+    <fieldset style="background-color: rgb(178, 209, 209);">
+        <span><b>Choose T-shirt-Size</b></span><br>
+        <div>
+            <input type="radio" name="size" id="S" value="S">
+            <label for="S">S</label>
+             <input type="radio" name="size" id="M" value="M">
+            <label for="M">M</label>
+             <input type="radio" name="size" id="L" value="L">
+            <label for="L">L</label>
+             <input type="radio" name="size" id="XL" value="XL">
+            <label for="XL">XL</label>
+        </div>
+   <br><br>
+    <label for="color"><b>Choose Favorite T-shirt</b></label>
+    <input type="color" placeholder="t-shirt-color" id="color"><br>
+    <br>
+    
+    <label for="Date"><b>pick a travel date</b></label>
+<input type="date" id="date">
+<label for="file">Choose the proof</label>
+<input type="file" id="file">
+<label for="range">Excitement-level</label>
+<input type="range" id="range" min="0"  max="100" value="5" name="vol">
+</fieldset>
+</header>
+<footer>
+    <br>
+    <fieldset>
+    <p>*Terms and conditions, also known as terms of service or terms of use, are a legal agreement outlining the rules and guidelines for using a website, app, or service. They establish a contract between the service provider and the user, defining acceptable behavior, prohibited actions, and the provider's rights. Essentially, they are a set of rules that both parties agree to abide by.Common clauses found in T&C include sections on user responsibilities, intellectual property, payment terms, limitation of liability, and dispute resolution. They also typically include an introduction, how acceptance of terms is indicated, and a clause on amendments.<br>* A reference to the Privacy Policy and a termination clause are often included as well.<br>*User behavior: They define what users can and cannot do while using the service, including acceptable use policies. <br>
+Intellectual property: They often address how users can use the service's content, including copyright and trademark information. <br>*
+Disclaimers: They may include disclaimers of warranties, limitations on liability, and other legal disclaimers to protect the service provider. 
+Payment and subscriptions: They can specify how payments are handled, subscription terms, and related details. <br>*
+Account management: They may detail how user accounts can be created, managed, and terminated. <br>*
+Dispute resolution: They can outline the procedures for resolving disputes between the user and the service provider. <br>*
+Governing law: They specify which jurisdiction's laws govern the agreement.   </p>
+    <label for="term"><h3>Terms and condition</h3></label>
+    <input type="checkbox" id="term>"
+    </fieldset>
+</footer>
+   
+     <div style="text-align: center;" >
+    <legend>Feedback</legend>
+    <textarea rows="10" cols="40">write your feedback</textarea>
+    </div>
+    
+<button style="background-color: rgb(182, 157, 112);">Submit</button>
+<button style="background-color: yellowgreen;">Reset</button>
+</form>
+</div>
+</body>
+</html>
