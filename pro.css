@@ -1,0 +1,169 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #d1dbe4, #d2e5e6);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+#header {
+  background: #29231f;
+  color: #eee7e7;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header h1 {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#header input {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;
+  width: 220px;
+  transition: 0.3s;
+}
+
+#header input:focus {
+  width: 260px;
+  box-shadow: 0 0 10px rgba(18, 49, 189, 0.6);
+}
+
+/* ===== Navigation ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #615899;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #023e8a;
+}
+
+/* ===== Weekly Forecast Boxes ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.box {
+  background: #ffffffaa;
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #0077b6;
+}
+
+.box i {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #ffb703;
+}
+
+.box h3 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: #023e8a;
+}
+
+.box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== India Weather Condition Section ===== */
+/* ===== India Weather Grid ===== */
+section div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 15px;
+}
+
+section div a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffffcc;
+  backdrop-filter: blur(4px);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0077b6;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section div a:hover {
+  background: #0077b6;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.temp {
+  font-weight: bold;
+  color: #d00000;
+}
+
+
+/* ===== Map Section ===== */
+iframe {
+  display: block;
+  margin: 25px auto;
+  border-radius: 10px;
+  max-width: 95%;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #023e8a;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
